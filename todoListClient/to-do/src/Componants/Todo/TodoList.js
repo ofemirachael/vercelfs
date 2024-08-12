@@ -25,7 +25,7 @@ export default function Todolist() {
      // to fetch all Lists
     const fetchTodos = async () => {
         try {
-            const res = await axios.get('https://vercelfs-server.vercel.app//todos');
+            const res = await axios.get('https://vercelfs-server.vercel.app/todos');
             if (res.status === 200) {
                 setMessageList('');
                 setListItems(res.data); 
