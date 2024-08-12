@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1722215208767,
+    "title": "React and Node.js Assignment",
+    "todoItems": [
+      {
+        "id": 1722215366544,
+        "title": "SetUp Server",
+        "isCompleted": true,
+        "date": "2024-07-29"
+      },
+      {
+        "id": 1722215377051,
+        "title": "SetUp Client",
+        "isCompleted": true,
+        "date": "2024-07-29"
+      },
+      {
+        "id": 1722215384988,
+        "title": "Add Router",
+        "isCompleted": true,
+        "date": "2024-07-29"
+      },
+      {
+        "id": 1722215403902,
+        "title": "Add proxy setting in package.json",
+        "isCompleted": true,
+        "date": "2024-07-29"
+      },
+      {
+        "id": 1722215416871,
+        "title": "Install axios, react-tooltip, react-icons on client side.",
+        "isCompleted": false,
+        "date": "2024-07-29"
+      },
+      {
+        "id": 1722215485387,
+        "title": "Install express, body-parser, fs on server",
+        "isCompleted": false,
+        "date": "2024-07-29"
+      },
+      {
+        "id": 1722215496378,
+        "title": "Create README file.",
+        "isCompleted": false,
+        "date": "2024-07-29"
+      }
+    ],
+    "date": "2024-07-29"
+  },
+  {
+    "id": 1722215532872,
+    "title": "Banff Trip",
+    "todoItems": [
+      {
+        "id": 1722215592330,
+        "title": "Gandola",
+        "isCompleted": false,
+        "date": "2024-07-29"
+      },
+      {
+        "id": 1722215600713,
+        "title": "Lake Louis",
+        "isCompleted": true,
+        "date": "2024-07-29"
+      },
+      {
+        "id": 1722215646269,
+        "title": "Bow Falls",
+        "isCompleted": false,
+        "date": "2024-07-29"
+      },
+      {
+        "id": 1722215672411,
+        "title": "Bow River Float Adventure",
+        "isCompleted": false,
+        "date": "2024-07-29"
+      },
+      {
+        "id": 1722455743008,
+        "title": "Cascade Pond",
+        "isCompleted": false,
+        "date": "2024-07-31"
+      }
+    ],
+    "date": "2024-07-29"
+  },
+  {
+    "id": 1722215716890,
+    "title": "Course Left ",
+    "todoItems": [],
+    "date": "2024-07-29"
+  }
+]

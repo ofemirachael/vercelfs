@@ -1,0 +1,331 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 110vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Left section styles */
+.leftsection, .rghtSec {
+    flex: 1;
+    margin: 0 0px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.leftsection{
+    background-color: #ddd5f5;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    direction: rtl; 
+}
+
+/* width */
+.rghtSec::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 5px;
+  }
+  
+  /* Track */
+ .rghtSec::-webkit-scrollbar-track {
+    background: #7662a0; 
+  }
+   
+  /* Handle */
+  .rghtSec::-webkit-scrollbar-thumb {
+    background: #ddd5f5; 
+  }
+  
+.rghtSec::-webkit-scrollbar-thumb:hover {
+    background: #ddd5f5; 
+  }
+   /* width */
+.leftsection::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 5px;
+  }
+  
+  /* Track */
+  .leftsection::-webkit-scrollbar-track {
+    background: #7662a0; 
+  }
+   
+  /* Handle */
+  .leftsection::-webkit-scrollbar-thumb {
+    background: #ddd5f5; 
+  }
+  
+  /* Handle on hover */
+  .leftsection::-webkit-scrollbar-thumb:hover {
+    background: #ddd5f5; 
+  }
+/* Card styling for the todo list */
+.todoListContainer {
+    width: 90%;
+    direction: ltr; /* Ensure content is displayed in LTR */
+
+}
+.todolist {
+    width: 95%;   
+}
+.addListBtn {
+    font-size: 3rem;
+    margin-right:85%;
+    color:#7662a0;
+    cursor: pointer;
+}
+
+.addListBtn:hover {
+    color: #795fcf;
+}
+
+.inputListItem {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    width: 40%;
+    padding:10px;
+    border-radius: 20px;
+    
+}
+
+.addItemBtn {
+    font-size: 2rem;
+    cursor: pointer;
+    color:#cdc4df;
+    margin:0px;
+}
+
+.deleteListItem {
+    font-size: 2.5rem;
+    color: #ddd5f5;
+    cursor: pointer;
+}
+
+.listItems {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #78659e;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    color:#ddd5f5;
+}
+
+.listItem:hover {
+    background-color: #cdc4df;
+    color:#7662a0
+}
+
+.deleteItemBtn {
+    font-size: 18px;
+    cursor: pointer;
+    color: #dc3545;
+}
+
+.editBtn {
+    font-size: 1.5rem;
+    margin-left: auto;
+    cursor: pointer;
+    color: #b281f1;
+}
+
+.editInput {
+    margin-right: 1px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #dee2e6;
+    padding: 5px;
+    width:50%;
+}
+
+.message {
+    margin-top: 20px;
+    color: #78659e;
+}
+
+
+
+.rghtSec {
+    display: flex;
+    flex:right;
+    background-color: #ece8fa;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+/* Container for add button and dropdown */
+.addListItemContainer {   
+    display: flex;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.addListItemBtn {
+    display: flex;
+    align-items: left;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #7662a0;
+}
+
+.dropDown {
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin-left: auto;
+}
+
+.inputListItemValue {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #7662a0;
+    border-radius: 20px;
+    outline: none;
+    background-color: #ece8fa;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.filterContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Hide the default checkbox */
+.chckbox {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox container */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px; /* Adjust as needed */
+    margin-bottom: 12px; /* Adjust as needed */
+    cursor: pointer;
+    font-size: 22px; /* Adjust as needed */
+    user-select: none;
+
+}
+
+/* Custom checkbox element */
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #7662a0; /* Adjust as needed */
+    border-radius: 4px;
+    transform: translateY(-25%);
+}
+
+/* On hover, add a border */
+.custom-checkbox:hover .checkmark {
+    background-color: #b281f1; /* Adjust as needed */
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark/indicator when checked */
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.listItemDetails.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.editBtnList{
+    color:#78659e;
+    font-size: 1.2rem;
+    margin-left:auto;
+
+}
+
+.deleteItem{
+    color:#78659e;
+    font-size: 1.2rem;
+
+    margin-left: 10px; 
+}
+.todoItemsContainer{
+    width:100%;
+}
+.listItemDetails{
+    display: flex;    
+    padding: 15px;
+    margin: 5px 0;
+    border: 1px solid #cdc4df;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    color:#78659e;
+    align-items: center; 
+}
+
+.todoItems {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.todoItems li {
+    display: flex;   
+    width: 95%;
+    align-items: center;
+}
+
+.react-tooltip{
+    background-color: #7662a0;
+    color:#cdc4df;
+}
+
+.downloadImg{
+    font-size: 2rem;
+    color:#7662a0;
+    margin-left:80%;
+    cursor: pointer;
+}
+.testforimag{
+   visibility:collapse;
+}
