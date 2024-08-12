@@ -31,6 +31,7 @@ export default function Todolist() {
                 setListItems(res.data); 
                 if (res.data.length > 0) {
                     handleSelectList(res.data[0].id, res.data[0].title);
+                    console.log(res.data[0].id, res.data[0].title)
                 }
             } else if (res.status === 204) {
                 setMessageList('Lists are empty');
