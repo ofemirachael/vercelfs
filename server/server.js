@@ -26,7 +26,9 @@ const writeTasksToFile = (tasks) => {
 };
 
 // Routes
-
+app.get("/", (req, res) => {
+  res.send("Hello To Do");
+});
 //to get to do list
 app.get('/todos', (req, res) => {
     const todolist = readTasksFromFile();
