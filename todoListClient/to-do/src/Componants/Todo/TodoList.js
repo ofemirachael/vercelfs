@@ -25,7 +25,7 @@ export default function Todolist() {
      // to fetch all Lists
     const fetchTodos = async () => {
         try {
-            const res = await axios.get('/todos');
+            const res = await axios.get('https://vercelfs-server.vercel.app//todos');
             if (res.status === 200) {
                 setMessageList('');
                 setListItems(res.data); 
@@ -49,7 +49,7 @@ export default function Todolist() {
         // to post item to server
     const postTodoItem = async (addListValue) => {
         try {
-            const res = await axios.post('/todos', {
+            const res = await axios.post('https://vercelfs-server.vercel.app//todos', {
                 id: new Date().getTime(),
                 title: addListValue,
                 todoItems: [],
@@ -76,7 +76,7 @@ export default function Todolist() {
   // delete list from server
     const handleRemoveItem = async (index) => {
         try {
-            const res = await axios.delete(`/todos/${index}`);
+            const res = await axios.delete(`https://vercelfs-server.vercel.app//todos/${index}`);
             setMessageList('List Removed');
             fetchTodos(); 
             window.location.reload()
@@ -93,7 +93,7 @@ export default function Todolist() {
 //to save edit value to server
     const handleSaveEdit = async () => {
         try {
-            const res = await axios.put(`/todos/${editingId}`, {
+            const res = await axios.put(`https://vercelfs-server.vercel.app//todos/${editingId}`, {
                 title: editingValue
             });
             setMessageList('Todo updated successfully');
